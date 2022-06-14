@@ -1,26 +1,46 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h6>Vue</h6>
+  <TemplateFeature/>
+  <BindFeature/>
+  <ConditionalRendering/>
+  <ListRendering/>
+  <FormHandling/>
+  <ParentComponent/>
+  <DynamicComponent/>
+  <RefsFeature/>
+  <TransitionFeature/>
+  <MixinsFeature/>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  import TemplateFeature from './components/TemplateFeature.vue'
+  import BindFeature from './components/BindFeature.vue';
+  import ConditionalRendering from './components/ConditionalRendering.vue'
+  import ListRendering from './components/ListRendering.vue'
+  import FormHandling from './components/FormHandling.vue'
+  import ParentComponent from './components/ParentComponent.vue'
+  import DynamicComponent from './components/DynamicComponent.vue'
+  import RefsFeature from './components/RefsFeature.vue'
+  import TransitionFeature from './components/TransitionFeature.vue'
+  import MixinsFeature from './components/MixinsFeature.vue'
+  export default {
+    name:"App",
+    components:{
+      TemplateFeature,
+      BindFeature,
+      ConditionalRendering,
+      ListRendering,
+      FormHandling,
+      ParentComponent,
+      DynamicComponent,
+      RefsFeature,
+      TransitionFeature,
+      MixinsFeature
+    }
   }
-}
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body{
+    color: black;
+    text-align: center;
+  }
 </style>
